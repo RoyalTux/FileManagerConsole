@@ -193,7 +193,7 @@ namespace PsCon
                 }
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -248,7 +248,7 @@ namespace PsCon
                 }
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -290,7 +290,7 @@ namespace PsCon
                 }
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -329,7 +329,7 @@ namespace PsCon
                 Console.Write(hdl.cross);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
         public static void PrintHorizontalLine(bool cansel, int positionX, int positionY, int sizeX, int cross, ConsoleColor text, ConsoleColor background)
@@ -352,7 +352,7 @@ namespace PsCon
                 Console.Write(hdl.cross);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -391,7 +391,7 @@ namespace PsCon
                 Console.Write(hdl.cross);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -415,7 +415,7 @@ namespace PsCon
                 Console.Write(hdl.cross);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -454,7 +454,7 @@ namespace PsCon
                 Console.Write(hdl.cross);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
         public static void PrintVerticalLine(bool cansel, int positionX, int positionY, int sizeY, int cross, ConsoleColor text, ConsoleColor background)
@@ -477,7 +477,7 @@ namespace PsCon
                 Console.Write(hdl.cross);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -516,7 +516,7 @@ namespace PsCon
                 Console.Write(hdl.cross);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
         public static void PrintVerticalLineDouble(bool cansel, int positionX, int positionY, int sizeY, int cross, ConsoleColor text, ConsoleColor background)
@@ -539,7 +539,7 @@ namespace PsCon
                 Console.Write(hdl.cross);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -556,7 +556,7 @@ namespace PsCon
                 Console.Write(ch);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -573,7 +573,7 @@ namespace PsCon
                 Console.Write(ch);
             }
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -585,7 +585,7 @@ namespace PsCon
             Console.SetCursorPosition(X, Y);
             Console.Write(str);
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -597,7 +597,7 @@ namespace PsCon
             Console.SetCursorPosition(X, Y);
             Console.Write(count);
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -609,7 +609,7 @@ namespace PsCon
             Console.SetCursorPosition(X, Y);
             Console.Write(count);
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 

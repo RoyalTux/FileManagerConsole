@@ -360,7 +360,7 @@ namespace FileManager
         {
             this.Clear();
 
-            PsCon.PsCon.PrintFrameDoubleLine(this.left, this.top, this.width, this.height, ConsoleColor.White, ConsoleColor.Black);
+            PsCon.PsCon.PrintFrameDoubleLine(this.left, this.top, this.width, this.height, ConsoleColor.Green, ConsoleColor.Black);
 
             StringBuilder caption = new StringBuilder();
             if (this.discs)
@@ -371,7 +371,7 @@ namespace FileManager
             {
                 caption.Append(' ').Append(this.path).Append(' ');
             }
-            PsCon.PsCon.PrintString(caption.ToString(), this.left + this.width / 2 - caption.ToString().Length / 2, this.top, ConsoleColor.White, ConsoleColor.Black);
+            PsCon.PsCon.PrintString(caption.ToString(), this.left + this.width / 2 - caption.ToString().Length / 2, this.top, ConsoleColor.Green, ConsoleColor.Black);
 
             this.PrintContent();
         }
@@ -413,10 +413,10 @@ namespace FileManager
                 if (i == this.activeObjectIndex && this.active == true)
                 {
                     Console.ForegroundColor = ConsoleColor.Black;
-                    Console.BackgroundColor = ConsoleColor.White;
+                    Console.BackgroundColor = ConsoleColor.Green;
                 }
                 this.PrintObject(i);
-                Console.ForegroundColor = ConsoleColor.White;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.BackgroundColor = ConsoleColor.Black;
                 count++;
             }
@@ -483,11 +483,11 @@ namespace FileManager
             Console.SetCursorPosition(this.left + 1, this.top + offsetY + 1);
 
             Console.ForegroundColor = ConsoleColor.Black;
-            Console.BackgroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Green;
 
             this.PrintObject(index);
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -496,7 +496,7 @@ namespace FileManager
             int offsetY = this.activeObjectIndex - this.firstObjectIndex;
             Console.SetCursorPosition(this.left + 1, this.top + offsetY + 1);
 
-            Console.ForegroundColor = ConsoleColor.White;
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.Black;
 
             this.PrintObject(index);

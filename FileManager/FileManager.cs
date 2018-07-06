@@ -21,7 +21,7 @@ namespace FileManager
             Console.CursorVisible = false;
             Console.SetWindowSize(120, 41);
             Console.SetBufferSize(120, 41);
-            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.BackgroundColor = ConsoleColor.Black;
         }
 
@@ -424,14 +424,14 @@ namespace FileManager
             string fileName = String.Format(" {0} ", file);
             PsCon.PsCon.PrintString(fileName, (Console.WindowWidth - fileName.Length) / 2, 0, ConsoleColor.Yellow, ConsoleColor.Black);
             PsCon.PsCon.PrintFrameLine(0, Console.WindowHeight - 5, Console.WindowWidth, 4, ConsoleColor.DarkYellow, ConsoleColor.Black);
-            PsCon.PsCon.PrintString("PageDown / PageUp - навигация, Esc - выход", 1, Console.WindowHeight - 4, ConsoleColor.White, ConsoleColor.Black);
+            PsCon.PsCon.PrintString("PageDown / PageUp - навигация, Esc - выход", 1, Console.WindowHeight - 4, ConsoleColor.Green, ConsoleColor.Black);
         }
 
         private void PrintProgress(int position, int length)
         {
             string pageMessage = String.Format("Позиция: {0}%", (100 * position) / length);
-            PsCon.PsCon.PrintString(new String(' ', Console.WindowWidth / 2 - 1), Console.WindowWidth / 2, Console.WindowHeight - 4, ConsoleColor.White, ConsoleColor.Black);
-            PsCon.PsCon.PrintString(pageMessage, Console.WindowWidth - pageMessage.Length - 2, Console.WindowHeight - 4, ConsoleColor.White, ConsoleColor.Black);
+            PsCon.PsCon.PrintString(new String(' ', Console.WindowWidth / 2 - 1), Console.WindowWidth / 2, Console.WindowHeight - 4, ConsoleColor.Red, ConsoleColor.Black);
+            PsCon.PsCon.PrintString(pageMessage, Console.WindowWidth - pageMessage.Length - 2, Console.WindowHeight - 4, ConsoleColor.Red, ConsoleColor.Black);
         }
 
         private string ReadFileToString(string fullFileName, Encoding encoding)
@@ -622,19 +622,19 @@ namespace FileManager
 
             for (int i = 0; i < menu.Length; i++)
             {
-                PsCon.PsCon.PrintFrameLine(cellLeft + i * cellWidth, cellTop, cellWidth, cellHeight, ConsoleColor.White, ConsoleColor.Black);
-                PsCon.PsCon.PrintString(menu[i], cellLeft + i * cellWidth + 1, cellTop + 1, ConsoleColor.White, ConsoleColor.Black);
+                PsCon.PsCon.PrintFrameLine(cellLeft + i * cellWidth, cellTop, cellWidth, cellHeight, ConsoleColor.Green, ConsoleColor.Black);
+                PsCon.PsCon.PrintString(menu[i], cellLeft + i * cellWidth + 1, cellTop + 1, ConsoleColor.Yellow, ConsoleColor.Black);
             }
         }
        
         private void ShowMessage(string message)
         {
-            PsCon.PsCon.PrintString(message, 0, Console.WindowHeight - BOTTOM_OFFSET, ConsoleColor.White, ConsoleColor.Black);
+            PsCon.PsCon.PrintString(message, 0, Console.WindowHeight - BOTTOM_OFFSET, ConsoleColor.Green, ConsoleColor.Black);
         }
 
         private void ClearMessage()
         {
-            PsCon.PsCon.PrintString(new String(' ', Console.WindowWidth), 0, Console.WindowHeight - BOTTOM_OFFSET, ConsoleColor.White, ConsoleColor.Black);
+            PsCon.PsCon.PrintString(new String(' ', Console.WindowWidth), 0, Console.WindowHeight - BOTTOM_OFFSET, ConsoleColor.Green, ConsoleColor.Black);
         }
     }
 }
